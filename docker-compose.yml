@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mysqldb:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: woodbrass_root_pass
+      MYSQL_DATABASE: woodbrass
+      MYSQL_USER: woodbrass_user
+      MYSQL_PASSWORD: woodbrass_user_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - woodbrass-db-data:/var/lib/mysql
+
+volumes:
+  woodbrass-db-data:
