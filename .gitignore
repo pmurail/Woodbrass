@@ -1,0 +1,133 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vscode/
+.idea/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+AnyCPU/
+[Ll]ogs/
+[Ll]og/
+*.[Ll]og
+
+# Publishing
+[Pp]ublish/
+[Pp]ublished/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/build/PackageRestore/
+!**/packages/build/PackageRestore/PackageRestore.targets
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide
+*.sln.ide.user
+*.sln.ide.userprefs
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+ipch/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+
+# Entity Framework
+**/Migrations/*.cs
+!**/Migrations/Configuration.cs
+
+# Test Results
+TestResults/
+[Tt]est[Rr]esult*/
+*.testsettings
+*.testhost.*
+*.trx
+*.coverage
+*.coveragexml
+[Cc]overage[Rr]esults/
+
+# Documentation
+[Dd]oc/[Hh]tml/
+[Dd]oc/[Xx]ml/
+
+# Build and Output
+*.dll
+*.exe
+*.pdb
+*.cache
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*.bak
+*.[Cc]ache
+*.ilk
+*.meta
+*.obj
+*.idb
+*.pch
+*.tlog
+*.lastbuildstate
+*.exp
+
+# Certificates and Secrets
+*.pfx
+*.key
+*.crt
+*.pem
+**/[Ss]ecrets/
+appsettings*.json
+!appsettings.template.json
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# IDE specific
+.idea/
+*.sln.iml
+.vscode/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
