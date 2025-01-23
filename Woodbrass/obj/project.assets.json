@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/p.murail/.nuget/packages/": {}
+    "/Users/kaoutarkouache/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/p.murail/Desktop/Ecole/DocNet/Woodbrass/Woodbrass/Woodbrass.csproj",
+      "projectUniqueName": "/Users/kaoutarkouache/Woodbrass/Woodbrass/Woodbrass.csproj",
       "projectName": "Woodbrass",
-      "projectPath": "/Users/p.murail/Desktop/Ecole/DocNet/Woodbrass/Woodbrass/Woodbrass.csproj",
-      "packagesPath": "/Users/p.murail/.nuget/packages/",
-      "outputPath": "/Users/p.murail/Desktop/Ecole/DocNet/Woodbrass/Woodbrass/obj/",
+      "projectPath": "/Users/kaoutarkouache/Woodbrass/Woodbrass/Woodbrass.csproj",
+      "packagesPath": "/Users/kaoutarkouache/.nuget/packages/",
+      "outputPath": "/Users/kaoutarkouache/Woodbrass/Woodbrass/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/p.murail/.nuget/NuGet/NuGet.Config"
+        "/Users/kaoutarkouache/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -42,7 +42,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/p.murail/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
