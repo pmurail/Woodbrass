@@ -1,0 +1,8 @@
+@foreach (var product in Model.Products)
+{
+    <div>
+        <h3>@product.Name</h3>
+        <p>@product.Price €</p>
+        <a href="/Products/Details/@product.Id">Voir Détails</a>
+    </div>
+}
