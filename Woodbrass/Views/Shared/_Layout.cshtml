@@ -1,50 +1,277 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - Woodbrass</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Woodbrass.styles.css" asp-append-version="true"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>@ViewData["Title"] - YourWebsite</title>
+    <meta name="description" content="Hurst – Furniture Store eCommerce Template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/animate.min.css" />
+    <link rel="stylesheet" href="~/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="~/lib/css/nivo-slider.css" />
+    <link rel="stylesheet" href="~/lib/css/preview.css" />
+    <link rel="stylesheet" href="~/css/slick.min.css" />
+    <link rel="stylesheet" href="~/css/lightbox.min.css" />
+    <link rel="stylesheet" href="~/css/material-design-iconic-font.css" />
+    <link rel="stylesheet" href="~/css/default.css" />
+    <link rel="stylesheet" href="~/style.min.css" />
+    <link rel="stylesheet" href="~/css/shortcode.css" />
+    <link rel="stylesheet" href="~/css/responsive.css" />
+
+    <!-- Scripts -->
+    <script src="~/js/vendor/modernizr-3.11.2.min.js"></script>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Woodbrass</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
-                </ul>
+    <!-- WRAPPER START -->
+    <div class="wrapper">
+        <!-- Mobile Header Top -->
+        <div class="mobile-header-top d-block d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-search-mobile">
+                            <div class="table">
+                                <div class="table-cell">
+                                    <ul>
+                                        <li><a class="search-open" href="#"><i class="zmdi zmdi-search"></i></a></li>
+                                        <li><a href="~/Account/Login"><i class="zmdi zmdi-lock"></i></a></li>
+                                        <li><a href="~/Account/MyAccount"><i class="zmdi zmdi-account"></i></a></li>
+                                        <li><a href="~/Wishlist"><i class="zmdi zmdi-favorite"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2025 - Woodbrass - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <!-- HEADER START -->
+        <header id="sticky-menu" class="header">
+            <div class="header-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4 col-7">
+                            <div class="logo text-md-center">
+                                <a href="~/"><img src="~/img/logo/logo.png" alt="Logo" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-5">
+                            <div class="mini-cart text-end">
+                                <ul>
+                                    <li>
+                                        <a class="cart-icon" href="#">
+                                            <i class="zmdi zmdi-shopping-cart"></i>
+                                            <span>3</span>
+                                        </a>
+                                        <div class="mini-cart-brief text-left">
+                                            <div class="cart-items">
+                                                <p class="mb-0">You have <span>03 items</span> in your shopping bag</p>
+                                            </div>
+                                            <div class="all-cart-product clearfix">
+                                                <div class="single-cart clearfix">
+                                                    <div class="cart-photo">
+                                                        <a href="#"><img src="~/img/cart/1.jpg" alt="Product 1" /></a>
+                                                    </div>
+                                                    <div class="cart-info">
+                                                        <h5><a href="#">Dummy Product Name</a></h5>
+                                                        <p class="mb-0">Price: $100.00</p>
+                                                        <p class="mb-0">Qty: 02</p>
+                                                        <span class="cart-delete"><a href="#"><i class="zmdi zmdi-close"></i></a></span>
+                                                    </div>
+                                                </div>
+                                                <!-- Add more products as needed -->
+                                            </div>
+                                            <div class="cart-totals">
+                                                <h5 class="mb-0">Total <span class="floatright">$500.00</span></h5>
+                                            </div>
+                                            <div class="cart-bottom clearfix">
+                                                <a href="~/Cart" class="button-one floatleft text-uppercase" data-text="View cart">View cart</a>
+                                                <a href="~/Checkout" class="button-one floatright text-uppercase" data-text="Check out">Check out</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN MENU -->
+            <div class="main-menu d-none d-md-block">
+                <nav>
+                    <ul>
+                        <li><a href="~/">Home</a></li>
+                        <li><a href="~/Shop">Products</a></li>
+                        <li><a href="~/About">About Us</a></li>
+                        <li><a href="~/Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- Content Rendered Here -->
+        <main role="main" class="py-4">
+            @RenderBody()
+        </main>
+        
+        <!-- FOOTER -->
+        <footer>
+            <!-- Footer-area start -->
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer">
+                                <h3 class="footer-title title-border">Contact Us</h3>
+                                <ul class="footer-contact">
+                                    <li><span>Address :</span>28 Green Tower, Street Name,<br>New York City, USA</li>
+                                    <li><span>Cell-Phone :</span>012345 - 123456789</li>
+                                    <li><span>Email :</span>your-email@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="single-footer">
+                                <h3 class="footer-title title-border">Accounts</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Account</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Wishlist</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Cart</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Sign In</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Check out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="single-footer">
+                                <h3 class="footer-title title-border">Shipping</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>New Products</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Top Sellers</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Manufacturers</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Suppliers</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Specials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer">
+                                <h3 class="footer-title title-border">Your Choice Products</h3>
+                                <div class="footer-product">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="footer-thumb">
+                                                <a href="#"><img src="~/img/footer/1.jpg" alt="" /></a>
+                                                <div class="footer-thumb-info">
+                                                    <p><a href="#">Furniture Product<br>Name</a></p>
+                                                    <h4 class="price-3">$ 60.00</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="footer-thumb">
+                                                <a href="#"><img src="~/img/footer/2.jpg" alt="" /></a>
+                                                <div class="footer-thumb-info">
+                                                    <p><a href="#">Furniture Product<br>Name</a></p>
+                                                    <h4 class="price-3">$ 60.00</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer-area end -->
+            <!-- Copyright-area start -->
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="copyright">
+                                <p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival</a> 2022. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="payment text-md-end">
+                                <a href="#"><img src="~/img/payment/1.png" alt="" /></a>
+                                <a href="#"><img src="~/img/payment/2.png" alt="" /></a>
+                                <a href="#"><img src="~/img/payment/3.png" alt="" /></a>
+                                <a href="#"><img src="~/img/payment/4.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright-area end -->
+        </footer>
     </div>
-</footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+    <!-- Scripts -->
+       <!-- All JS Scripts Here -->
+    <!-- jquery latest version -->
+    <script src="~/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="~/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery.meanmenu js -->
+    <script src="~/js/jquery.meanmenu.js"></script>
+    <!-- slick.min js -->
+    <script src="~/js/slick.min.js"></script>
+    <!-- jquery.treeview js -->
+    <script src="~/js/jquery.treeview.js"></script>
+    <!-- lightbox.min js -->
+    <script src="~/js/lightbox.min.js"></script>
+    <!-- jquery-ui js -->
+    <script src="~/js/jquery-ui.min.js"></script>
+    <!-- jquery.nivo.slider js -->
+    <script src="~/lib/js/jquery.nivo.slider.js"></script>
+    <script src="~/lib/home.js"></script>
+    <!-- jquery.nicescroll.min js -->
+    <script src="~/js/jquery.nicescroll.min.js"></script>
+    <!-- countdon.min js -->
+    <script src="~/js/countdon.min.js"></script>
+    <!-- wow js -->
+    <script src="~/js/wow.min.js"></script>
+    <!-- plugins js -->
+    <script src="~/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="~/js/main.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- isotope.pkgd.min js -->
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <!-- parallax js -->
+    <script src="~/js/parallax.min.js"></script>
+    <!-- waypoints js -->
+    <script src="~/js/waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <!-- wow animation js -->
+    <script src="~/js/animate-wow.js"></script>
+    <!-- fancybox js -->
+    <script src="~/js/jquery.fancybox.min.js"></script>
+    <!-- custom js -->
+    <script src="~/js/custom.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
