@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Woodbrass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afab0671de5e82a77d847eabfb132bcc0c1cde65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98c1f6cf83ecaeb54264f51412292985dbf7e53f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Woodbrass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Woodbrass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
