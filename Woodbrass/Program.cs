@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Woodbrass.Data;
+using Woodbrass.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<WoodBrassDbContext>(options =>
     options.UseMySql(connectionString, 
         ServerVersion.AutoDetect(connectionString)));
+
+// Configure Identity
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<WoodBrassDbContext>()
+    .AddDefaultTokenProviders();
 
 // Add services
 builder.Services.AddControllers();
@@ -25,7 +32,6 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,9 +39,13 @@ if (app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 app.UseHttpsRedirection();
+app.UseRouting();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"); 
 
 app.Run();
